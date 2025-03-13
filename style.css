@@ -1,0 +1,97 @@
+section{ display: none; }
+
+body, section.active, nav, .attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(1rem, calc(1rem + 1vw), 32px);
+}
+
+body, section.active, .attribution{
+    margin: 0;
+    padding: 5%;
+    flex-direction: column;
+    gap: clamp(15px, 1rem, 20px);
+    background-color: hsl(216, 12%, 8%);
+}
+
+section.active{
+    width: clamp(max-content, calc(1rem + 30vw), 80%);
+    height: clamp(max-content, calc(1rem + 30vh), 90%);
+    padding: 10%;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    border-radius: 5%;
+}
+
+b{
+    color: hsl(0, 0%, 100%);
+    font-size: larger;
+}
+
+b:focus, p:focus, button:focus{
+    background-color: red;
+    color: hsl(216, 12%, 8%);
+}
+
+button{
+    width: 25%;
+    margin-block: 1%;
+    font-size: 90%;
+    cursor: pointer;
+}
+
+button, nav button.active{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+    padding: 2.5%;
+}
+
+nav{
+    justify-content: space-evenly;
+    width: 100%;
+
+    button{
+        background-color: #2F4F4F;
+        color: hsl(0, 0%, 100%);
+        width: max-content;
+        padding: clamp(5px, 10%, 15px);
+    }
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+    transition: 0.3s;
+}
+
+nav button, img{ border-radius: 50%; }
+
+.leftAlign{ align-self: flex-start; }
+
+.attribution{ color: hsl(0, 0%, 100%); }
+
+a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    margin-block: 5px;
+}
+
+a:hover {
+    color: gold;
+    transition: 0.3s;
+}
+
+a:focus {
+    color: red;
+    background-color: hsl(228, 45%, 44%);
+}
+
+#selectedShowcaserId{
+    background-color: #2F4F4F;
+    color: hsl(25, 97%, 53%);
+    font-size: larger;
+    padding: 1%;
+    border-radius: 10%;
+}

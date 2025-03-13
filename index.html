@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <section class="active">
+
+    <img src="./images/icon-star.svg" alt="" tabindex="-1" aria-hidden="true" class="leftAlign">
+
+    <b tabindex="0" class="leftAlign"> How did we do? </b>
+
+    <p tabindex="0" class="leftAlign">
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+
+    <nav aria-label="Rate buttons" aria-valuemin="1" aria-valuemax="5">
+
+      <button aria-label="Rate 1" aria-pressed="false"> 1 </button>
+
+      <button aria-label="Rate 2" aria-pressed="false"> 2 </button>
+
+      <button aria-label="Rate 3" aria-pressed="false"> 3 </button>
+
+      <button aria-label="Rate 4" aria-pressed="false"> 4 </button>
+
+      <button aria-label="Rate 5" aria-pressed="false"> 5 </button>
+
+    </nav>
+
+    <button tabindex="0" id="submitButtonId"> Submit </button>
+
+  </section>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <section>
+
+    <img src="./images/illustration-thank-you.svg" alt="" tabindex="-1">
+
+    <span id="selectedShowcaserId"></span>
+
+    <b tabindex="0"> Thank you! </b>
+
+    <p tabindex="0">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+
+  </section>
+
+  <!-- Thank you state end -->
+
+  <div class="attribution">
+
+    <span> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </span>
+
+    <span> Coded by <a href="https://github.com/Guilherme-Porto-Silva/">Guigui-chan</a>. </span>
+
+  </div>
+
+  <script src="./engine.js"></script>
+
+</body>
+</html>
